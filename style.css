@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40%;
+    font-size: 30px;
+    color: white;
+}
+
+div {
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    position: relative;
+    margin: auto;
+    margin-top: 10%;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 80px solid white;
+    border-right: 80px solid black;
+    width: 0;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 80px solid black;
+    border-right: 80px solid white;
+    width: 0;
+}
